@@ -20,6 +20,13 @@ body {
     display: flex;
     width: 70%;
     height: 144px;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Module:hover {
+    border: 2px solid chartreuse;
 }
 
 .Module__progress {
