@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(18, 18, 20);
+    color: white;
+}
+
+.Container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.Module {
+    display: flex;
+    width: 70%;
+    height: 144px;
+}
+
+.Module__progress {
+    width: 110px;
+    height: 100%;
+    background-color: rgb(9, 9, 10);
+}
+
+.Module__info {
+    width: 90%;
+    background: linear-gradient(90deg, rgb(50, 50, 53) 0%, rgba(62, 62, 69, 0.25) 100%)
+}
