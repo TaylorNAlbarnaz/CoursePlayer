@@ -22,6 +22,7 @@ body {
     height: 144px;
     cursor: pointer;
     border-radius: 10px;
+    border: 2px solid rgb(70, 70, 73);
     overflow: hidden;
 }
 
