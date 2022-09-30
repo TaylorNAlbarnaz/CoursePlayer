@@ -7,6 +7,13 @@
     -webkit-font-smoothing: antialiased !important;
 }
 
+:root {
+    --colors-green: #04d361;
+    --colors-blue: #6a80ff;
+    --colors-title: #e1e1e6;
+    --colors-text: #c4c4cc;
+}
+
 .hidden {
     display: none;
 }

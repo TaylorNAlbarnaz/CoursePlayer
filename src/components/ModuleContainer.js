@@ -5,7 +5,10 @@ function ModuleContainer(props) {
     return (
         <>
             <div className="Container">
-                {props.children}
+                <h1>Módulos</h1>
+                <div className="Modules">
+                    {props.children}
+                </div>
             </div>
         </>
     )
