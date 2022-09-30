@@ -1,0 +1,100 @@
+:root {
+    --colors-green: #80ff00;
+    --colors-blue: #6a80ff;
+}
+
+.Module {
+    display: flex;
+    width: 70%;
+    height: 144px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: 1px solid #323235;
+}
+
+.Module:hover {
+    -webkit-box-shadow: 0px 0px 0px 2px var(--colors-blue);
+    -moz-box-shadow: 0px 0px 0px 2px var(--colors-blue);
+    box-shadow: 0px 0px 0px 2px var(--colors-blue);
+}
+
+.Module:hover .Module__progress__outer {
+    background-color: var(--colors-blue);
+}
+
+.Module:hover .Module__progress__number {
+    display: none!important;
+}
+
+.Module:hover .Module__progress__icon {
+    display: block!important;
+}
+
+.Module__progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 100%;
+    background-color: rgb(9, 9, 10);
+}
+
+.Module__progress__number {
+    font-weight: bolder;
+}
+
+.Module__progress__outer, .Module__progress__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--colors-green);
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.Module__progress__inner {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(9, 9, 10);
+}
+
+.Module__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    width: 90%;
+    background: linear-gradient(90deg, rgb(50, 50, 53) 0%, rgba(62, 62, 69, 0.25) 100%);
+}
+
+.Module__info:hover {
+    background: linear-gradient(90deg, rgb(68, 68, 71) 0%, rgba(89, 89, 97, 0.25) 100%);
+}
+
+.Module__info h2 {
+    display: inline-block;
+    color: #e1e1e6;
+    font-size: 1.4rem;
+}
+
+.Module__info p {
+    color: #c4c4cc;
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+.Module__info__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Module__info__time {
+    color: #c4c4cc;
+    font-size: 0.75rem;
+    font-weight: bold;
+}

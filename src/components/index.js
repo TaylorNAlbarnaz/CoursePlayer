@@ -1,4 +1,4 @@
-import App from './App';
+import ModuleContainer from './ModuleContainer';
 import Module from './Module';
 
-export { App, Module };
+export { ModuleContainer, Module };
