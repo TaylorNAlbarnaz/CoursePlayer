@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    text-rendering: optimizelegibility !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
 body {
@@ -22,12 +25,12 @@ body {
     height: 144px;
     cursor: pointer;
     border-radius: 10px;
-    border: 2px solid rgb(70, 70, 73);
+    border: 1px solid rgb(70, 70, 73);
     overflow: hidden;
 }
 
 .Module:hover {
-    border: 2px solid chartreuse;
+    border: 1px solid chartreuse;
 }
 
 .Module__progress {
@@ -37,6 +40,34 @@ body {
 }
 
 .Module__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
     width: 90%;
     background: linear-gradient(90deg, rgb(50, 50, 53) 0%, rgba(62, 62, 69, 0.25) 100%)
+}
+
+.Module__info h2 {
+    display: inline-block;
+    color: #e1e1e6;
+    font-size: 1.4rem;
+}
+
+.Module__info p {
+    color: #c4c4cc;
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+.Module__info__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Module__info__time {
+    color: #c4c4cc;
+    font-size: 0.75rem;
+    font-weight: bold;
 }
