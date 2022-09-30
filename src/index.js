@@ -29,7 +29,7 @@ root.render(
 <Module
       id="3"
       title="Título do Módulo 3"
-      time="14 minutos em 1 aula"
+      time="14min em 1 aula"
       info="Lorem ipsum dolor sit amet, Duis nec metus nec nisl blandit lobortis. 
       Phasellus non finibus nisl, ac tincidunt tortor. Proin at risus ac eros tincidunt facilisis. 
       Donec lobortis tellus massa, at vestibulum justo egestas ac. In lacinia fermentum condimentum. 
