@@ -4,7 +4,12 @@ function Module() {
     return (
         <>
             <div className="Module">
-                <div className="Module__progress"></div>
+                <div className="Module__progress">
+                    <section className="Module__progress__outer">
+                        <section className="Module__progress__inner" />
+                    </section>
+                </div>
+
                 <div className="Module__info">
                     <section className="Module__info__top">
                         <h2>Título do Módulo</h2>

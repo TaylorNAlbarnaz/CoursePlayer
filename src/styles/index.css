@@ -7,6 +7,11 @@
     -webkit-font-smoothing: antialiased !important;
 }
 
+:root {
+    --colors-green: #80ff00;
+    --colors-blue: #6a80ff;
+}
+
 body {
     background-color: rgb(18, 18, 20);
     color: white;
@@ -31,15 +36,40 @@ body {
 }
 
 .Module:hover {
-    -webkit-box-shadow: 0px 0px 0px 1px rgba(128,255,0,1);
-    -moz-box-shadow: 0px 0px 0px 1px rgba(128,255,0,1);
-    box-shadow: 0px 0px 0px 1px rgba(128,255,0,1);
+    -webkit-box-shadow: 0px 0px 0px 1px var(--colors-blue);
+    -moz-box-shadow: 0px 0px 0px 1px var(--colors-blue);
+    box-shadow: 0px 0px 0px 1px var(--colors-blue);
+}
+
+.Module:hover .Module__progress__outer {
+    background-color: var(--colors-blue);
 }
 
 .Module__progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 110px;
     height: 100%;
     background-color: rgb(9, 9, 10);
+}
+
+.Module__progress__outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--colors-green);
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.Module__progress__inner {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(9, 9, 10);
+    border-radius: 50%;
 }
 
 .Module__info {
@@ -49,7 +79,6 @@ body {
     padding: 15px;
     width: 90%;
     background: linear-gradient(90deg, rgb(50, 50, 53) 0%, rgba(62, 62, 69, 0.25) 100%);
-    transition: 0.2s;
 }
 
 .Module__info:hover {
