@@ -7,6 +7,10 @@
     -webkit-font-smoothing: antialiased !important;
 }
 
+.hidden {
+    display: none;
+}
+
 :root {
     --colors-green: #80ff00;
     --colors-blue: #6a80ff;
@@ -36,13 +40,21 @@ body {
 }
 
 .Module:hover {
-    -webkit-box-shadow: 0px 0px 0px 1px var(--colors-blue);
-    -moz-box-shadow: 0px 0px 0px 1px var(--colors-blue);
-    box-shadow: 0px 0px 0px 1px var(--colors-blue);
+    -webkit-box-shadow: 0px 0px 0px 2px var(--colors-blue);
+    -moz-box-shadow: 0px 0px 0px 2px var(--colors-blue);
+    box-shadow: 0px 0px 0px 2px var(--colors-blue);
 }
 
 .Module:hover .Module__progress__outer {
     background-color: var(--colors-blue);
+}
+
+.Module:hover .Module__progress__number {
+    display: none!important;
+}
+
+.Module:hover .Module__progress__icon {
+    display: block!important;
 }
 
 .Module__progress {
@@ -54,7 +66,11 @@ body {
     background-color: rgb(9, 9, 10);
 }
 
-.Module__progress__outer {
+.Module__progress__number {
+    font-weight: bolder;
+}
+
+.Module__progress__outer, .Module__progress__inner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +85,6 @@ body {
     width: 50px;
     height: 50px;
     background-color: rgb(9, 9, 10);
-    border-radius: 50%;
 }
 
 .Module__info {

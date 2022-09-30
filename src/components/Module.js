@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
 function Module() {
     return (
@@ -6,7 +8,10 @@ function Module() {
             <div className="Module">
                 <div className="Module__progress">
                     <section className="Module__progress__outer">
-                        <section className="Module__progress__inner" />
+                        <section className="Module__progress__inner">
+                            <span className="Module__progress__number">1</span>
+                            <FontAwesomeIcon className="Module__progress__icon hidden" icon={faPlay}/>
+                        </section>
                     </section>
                 </div>
 
