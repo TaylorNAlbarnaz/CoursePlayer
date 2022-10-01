@@ -8,7 +8,10 @@ function Module(props) {
         <>
             <div className="Module">
                 <div className="Module__progress">
-                    <section className="Module__progress__outer">
+                    <section
+                        className="Module__progress__outer"
+                        style={{'--value':props.percentage}}
+                    >
                         <section className="Module__progress__inner">
                             <span className="Module__progress__number">{props.id}</span>
                             <FontAwesomeIcon className="Module__progress__icon hidden" icon={faPlay}/>

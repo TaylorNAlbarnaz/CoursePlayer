@@ -33,7 +33,7 @@
     align-items: center;
     width: 110px;
     height: 100%;
-    background-color: rgb(9, 9, 10);
+    background-color: var(--colors-black);
 }
 
 .Module__progress__number {
@@ -46,15 +46,18 @@
     align-items: center;
     width: 60px;
     height: 60px;
-    background-color: var(--colors-green);
     border-radius: 50%;
     transition: 0.2s;
+}
+
+.Module__progress__outer {
+    background: conic-gradient(var(--colors-green) calc(var(--value) * 1%), var(--colors-gray) 0); 
 }
 
 .Module__progress__inner {
     width: 54px;
     height: 54px;
-    background-color: rgb(9, 9, 10);
+    background-color: var(--colors-black);
 }
 
 .Module__info {
@@ -63,7 +66,7 @@
     justify-content: space-between;
     padding: 15px;
     width: 90%;
-    background: linear-gradient(90deg, rgb(50, 50, 53) 0%, rgba(62, 62, 69, 0.25) 100%);
+    background: linear-gradient(90deg, #323235 0%, rgba(62, 62, 69, 0.25) 100%);
 }
 
 .Module__info:hover {

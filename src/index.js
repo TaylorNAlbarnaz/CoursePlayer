@@ -9,6 +9,7 @@ root.render(
     <Module
       id="1"
       title="Título do Módulo 1"
+      percentage="100"
       time="21min em 4 aulas"
       info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum 
       velit vitae libero aliquet, et gravida erat fringilla. Fusce consequat tincidunt 
@@ -19,6 +20,7 @@ root.render(
 <Module
       id="2"
       title="Título do Módulo 2"
+      percentage="60"
       time="34min em 3 aulas"
       info="Lorem ipsum dolor sit amet, Morbi tristique ligula eu maximus tempor. 
       Vivamus pellentesque neque quis sem aliquet porttitor. Duis molestie metus maximus dui molestie, 
@@ -29,6 +31,7 @@ root.render(
 <Module
       id="3"
       title="Título do Módulo 3"
+      percentage="25"
       time="14min em 1 aula"
       info="Lorem ipsum dolor sit amet, Duis nec metus nec nisl blandit lobortis. 
       Phasellus non finibus nisl, ac tincidunt tortor. Proin at risus ac eros tincidunt facilisis. 
