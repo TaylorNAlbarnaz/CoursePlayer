@@ -1,12 +1,16 @@
 .Module {
-    display: flex;
     width: 70%;
     height: 144px;
-    cursor: pointer;
     border-radius: 5px;
     overflow: hidden;
     transition: 0.2s;
     border: 1px solid #323235;
+}
+
+.Module a {
+    display: flex;
+    cursor: pointer;
+    height: 100%;
 }
 
 .Module:hover {

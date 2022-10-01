@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ModuleContainer, Module} from './';
 
 function ModulePage() {
@@ -39,6 +40,6 @@ function ModulePage() {
         />
     </ModuleContainer>
   </>)
-}
+};
 
 export default ModulePage;

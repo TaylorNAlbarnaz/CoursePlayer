@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import "./styles/Module.css";
@@ -7,6 +8,7 @@ function Module(props) {
     return (
         <>
             <div className="Module">
+                <Link to="/course">
                 <div className="Module__progress">
                     <section
                         className="Module__progress__outer"
@@ -28,6 +30,7 @@ function Module(props) {
                         <p>{props.info}</p>
                     </section>
                 </div>
+                </Link>
             </div>
         </>
     )

@@ -7,6 +7,10 @@
     -webkit-font-smoothing: antialiased !important;
 }
 
+a {
+    all: unset;
+}
+
 :root {
     --colors-green: #04d361;
     --colors-blue: #6a80ff;
