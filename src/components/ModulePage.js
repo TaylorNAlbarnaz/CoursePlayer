@@ -6,7 +6,7 @@ function ModulePage() {
   return (
   <>
     <ModuleContainer>
-        <Module
+      <Module
         id="1"
         title="Título do Módulo 1"
         percentage="100"
@@ -17,7 +17,7 @@ function ModulePage() {
         Etiam tristique sit amet ipsum et eleifend."
         />
 
-    <Module
+      <Module
         id="2"
         title="Título do Módulo 2"
         percentage="60"
@@ -28,7 +28,7 @@ function ModulePage() {
         Maecenas lacinia at tortor at sollicitudin."
         />
 
-    <Module
+      <Module
         id="3"
         title="Título do Módulo 3"
         percentage="25"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import { CoursePage, ModulePage} from "../components";
 
