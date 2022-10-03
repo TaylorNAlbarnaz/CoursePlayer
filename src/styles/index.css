@@ -24,6 +24,11 @@ a {
     display: none;
 }
 
+.workspace {
+    width: 70%;
+    min-width: 675px;
+}
+
 body {
     background-color: rgb(18, 18, 20);
     color: white;

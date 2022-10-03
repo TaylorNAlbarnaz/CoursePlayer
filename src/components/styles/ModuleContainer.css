@@ -1,4 +1,4 @@
-.Container {
+.Container__module {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.Container h1 {
+.Container__module h1 {
     display: block;
     margin-top: 10px;
     font-size: 1.5rem;
