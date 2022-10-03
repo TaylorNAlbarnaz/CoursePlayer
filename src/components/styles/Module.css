@@ -1,6 +1,7 @@
 .Module {
     width: 70%;
     height: 144px;
+    min-width: 675px;
     border-radius: 5px;
     overflow: hidden;
     transition: 0.2s;
