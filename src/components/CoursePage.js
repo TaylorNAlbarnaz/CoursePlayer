@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import "./styles/CoursePage.css";
 
 function CoursePage() {
@@ -14,7 +16,7 @@ function CoursePage() {
                             <div className='Videolist__icon'>
                                 <div className='Videolist__icon__outer'>
                                     <div className='Videolist__icon__inner'>
-                                        
+                                        <FontAwesomeIcon className="Module__progress__icon" icon={faCheck}/>
                                     </div>
                                 </div>
                             </div>
