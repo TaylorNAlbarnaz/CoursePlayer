@@ -1,7 +1,7 @@
 import React from 'react';
 import Course from './Course';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faCircle } from '@fortawesome/free-solid-svg-icons';
 import "./styles/CoursePage.css";
 import CourseHolder from './CourseHolder';
 
@@ -24,7 +24,11 @@ function CoursePage() {
                             </div>
                             <div className='Videolist__coursedetails'>
                                 <h2>Título extendido do Modulo</h2>
-                                <p>10 aulas <span>*</span> 24:02</p>
+                                <div className='Videolist__timedetails'>
+                                    <span>10 aulas </span>
+                                    <FontAwesomeIcon icon={faCircle}/>
+                                    <span> 24:02</span>
+                                </div>
                             </div>
                         </header>
                         <section className='Videolist__list'>
