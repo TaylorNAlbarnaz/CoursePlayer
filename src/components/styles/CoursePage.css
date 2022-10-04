@@ -7,3 +7,34 @@
     height: max-content;
     text-align: center;
 }
+
+.Container__course h1 {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: var(--colors-title);
+}
+
+.Container__play {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;
+}
+
+.Videoplayer {
+    flex: 4;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.Videolist {
+    flex: 2;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 5px;
+}
