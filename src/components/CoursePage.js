@@ -1,7 +1,9 @@
 import React from 'react';
+import Course from './Course';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import "./styles/CoursePage.css";
+import CourseHolder from './CourseHolder';
 
 function CoursePage() {
     return (
@@ -25,7 +27,14 @@ function CoursePage() {
                                 <p>10 aulas <span>*</span> 24:02</p>
                             </div>
                         </header>
-                        <section className='Videolist__list'></section>
+                        <section className='Videolist__list'>
+                            <CourseHolder>
+                                <Course />
+                                <Course selected/>
+                                <Course />
+                                <Course />
+                            </CourseHolder>
+                        </section>
                     </div>
                 </section>
             </div>

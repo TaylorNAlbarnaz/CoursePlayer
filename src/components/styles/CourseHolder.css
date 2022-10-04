@@ -1,0 +1,12 @@
+.Holder {
+    position: relative;
+}
+
+.Pole {
+    position: absolute;
+    width: 3px;
+    height: calc(100% - 20px);
+    background-color: var(--colors-green);
+    left: 24px;
+    top: 10px;
+}

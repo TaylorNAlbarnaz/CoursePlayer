@@ -1,0 +1,50 @@
+.Course {
+    display: flex;
+    width: 100%;
+    min-height: 23px;
+    text-align: left;
+    font-size: 0.8em;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.Course__icon {
+    display: flex;
+    flex: 2;
+    color: var(--colors-green);
+    justify-content: center;
+    align-items: center;
+}
+
+.Course__select__outer, .Course__select__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.Course__select__outer {
+    height: 23px;
+    width: 23px;
+    background-color: var(--colors-green);
+    font-size: 0.7em;
+}
+
+.Course__select__inner {
+    height: 19px;
+    width: 19px;
+    background-color: var(--colors-gray);
+}
+
+.Course__name {
+    margin-left: 15px;
+    flex: 8;
+}
+
+.Course__time {
+    flex: 2;
+    color: var(--colors-ltgray);
+}
