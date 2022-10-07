@@ -16,11 +16,12 @@ function Course(props) {
                 :
                     <FontAwesomeIcon icon={faCircle}/>
                 }
-                {props.pole ?
+                {props.first ?
+                null
+                :
                     <>
                         <div className={"Pole " + (props.seen ? 'seen' : '')}/>
                     </>
-                : null
                 }
             </div>
             <div className="Course__name">Nome do Curso</div>
