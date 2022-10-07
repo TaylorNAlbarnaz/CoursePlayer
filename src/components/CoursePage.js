@@ -33,10 +33,10 @@ function CoursePage() {
                         </header>
                         <section className='Videolist__list'>
                             <CourseHolder>
-                                <Course />
-                                <Course selected/>
-                                <Course />
-                                <Course />
+                                <Course seen/>
+                                <Course seen selected pole/>
+                                <Course pole/>
+                                <Course pole/>
                             </CourseHolder>
                         </section>
                     </div>

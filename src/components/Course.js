@@ -5,28 +5,27 @@ import "./styles/Course.css";
 
 function Course(props) {
     return (
-        <div className="Course">
-            {props.selected ?
-                <>
-                    <div className="Course__icon">
-                        <div className="Course__select__outer">
-                            <div className="Course__select__inner">
-                                <FontAwesomeIcon icon={faCircle}/>
-                            </div>
+        <div className="Course">    
+            <div className={"Course__icon " + (props.seen ? 'seen' : '')}>
+                {props.selected ? 
+                    <div className="Course__select__outer">
+                        <div className="Course__select__inner">
+                            <FontAwesomeIcon icon={faCircle}/>
                         </div>
                     </div>
-                    <div className="Course__name" style={{color: 'var(--colors-green'}}>Nome do Curso</div>
-                </>
-            :
-                <>
-                    <div className="Course__icon">
-                                <FontAwesomeIcon icon={faCircle}/>
-                    </div>
-                    <div className="Course__name">Nome do Curso</div>
-                </>
-            }
+                :
+                    <FontAwesomeIcon icon={faCircle}/>
+                }
+                {props.pole ?
+                    <>
+                        <div className={"Pole " + (props.seen ? 'seen' : '')}/>
+                    </>
+                : null
+                }
+            </div>
+            <div className="Course__name">Nome do Curso</div>
             
-            <div className="Course__time">01:55</div>
+            <div className={"Course__time " + (props.seen ? 'seen' : '')}>01:55</div>
         </div>
     )
 }
