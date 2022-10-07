@@ -41,6 +41,7 @@
 
 svg {
     z-index: 3;
+    cursor: pointer;
 }
 
 .Course__name {

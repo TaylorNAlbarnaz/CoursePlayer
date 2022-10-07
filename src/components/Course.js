@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import "./styles/Course.css";
 
 function Course(props) {
+    const [seen, setSeen] = useState(props.seen);
+
+    function handleClick() {
+        setSeen(!seen);
+
+    }
+
     return (
         <div className="Course">    
-            <div className={"Course__icon " + (props.seen ? 'seen' : '')}>
+            <div className={"Course__icon " + (seen ? 'seen' : '')} onClick={() => handleClick()}>
                 {props.selected ? 
                     <div className="Course__select__outer">
                         <div className="Course__select__inner">
@@ -20,13 +27,13 @@ function Course(props) {
                 null
                 :
                     <>
-                        <div className={"Pole " + (props.seen ? 'seen' : '')}/>
+                        <div className={"Pole " + (seen ? 'seen' : '')}/>
                     </>
                 }
             </div>
             <div className="Course__name">Nome do Curso</div>
             
-            <div className={"Course__time " + (props.seen ? 'seen' : '')}>01:55</div>
+            <div className={"Course__time " + (seen ? 'seen' : '')}>01:55</div>
         </div>
     )
 }
