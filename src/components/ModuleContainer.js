@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/ModuleContainer.css";
+import "../styles/index.css";
 
 function ModuleContainer(props) {
     return (
