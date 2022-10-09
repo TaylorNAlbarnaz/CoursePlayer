@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     },
 ]);
 
-const Routes = () => {
+function Routes() {
    return(
        <RouterProvider router={router}/>
    )
